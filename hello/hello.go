@@ -13,13 +13,15 @@ func main() {
 	log.SetPrefix("greetings: ")
 	log.SetFlags(0)
 
+	names := []string{"Glaby", "Samantha", "Darrin"}
+
 	// greetingsメッセージをもらい、それを出力
-	message, error := greetings.Hello("Greddy")
+	messages, error := greetings.Hellos(names)
 
 	// エラーが返された場合は、それをコンソールに表示しプログラムを終了する。
 	if error != nil {
 		log.Fatal(error)
 	}
 
-	fmt.Println(message)
+	fmt.Println(messages)
 }
