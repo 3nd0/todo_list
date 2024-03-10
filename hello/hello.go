@@ -14,7 +14,7 @@ func main() {
 	log.SetFlags(0)
 
 	// greetingsメッセージをもらい、それを出力
-	message, error := greetings.Hello("")
+	message, error := greetings.Hello("Greddy")
 
 	// エラーが返された場合は、それをコンソールに表示しプログラムを終了する。
 	if error != nil {
